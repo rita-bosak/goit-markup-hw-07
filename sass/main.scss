@@ -1,3 +1,29 @@
-body {
-  color: red;
-}
+// UTILS
+@import "./utils/variables";
+@import "./utils/vh";
+
+// BASE
+@import "./base/common";
+@import "./base/container";
+
+// COMPONENTS
+@import "./components/modal-btn";
+@import "./components/social-links";
+@import "./components/social-list";
+@import "./components/subtitle";
+@import "./components/logo";
+@import "./components/filter-btn";
+
+// LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio";
+@import "./layout/card-set";
+@import "./layout/backdrop";
+@import "./layout/modal-window";
+@import "./layout/modal-form";
+@import "./layout/footer";
