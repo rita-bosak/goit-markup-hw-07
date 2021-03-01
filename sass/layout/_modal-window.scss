@@ -33,11 +33,11 @@
   fill: #000000;
 
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
-  fill: var(--accent-color);
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-text {

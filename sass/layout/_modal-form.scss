@@ -29,11 +29,11 @@
   cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
 
-.form-box:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .form-box-icon {
@@ -47,10 +47,10 @@
   fill: black;
 
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.form-box:focus + .form-box-icon {
-  fill: var(--accent-color);
+  .form-box:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .form-label-message {
@@ -67,11 +67,11 @@
   border-radius: 4px;
 
   resize: none;
-}
 
-.form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .checkbox-label {
@@ -82,27 +82,27 @@
   margin-bottom: 30px;
 
   color: var(--secondary-text-color);
-}
 
-.checkbox-label::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  background-image: url(../images/checkbox_icon/vector.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    background-image: url(../images/checkbox_icon/vector.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 
-.checkbox:checked + .checkbox-label::before {
-  background-image: url(../images/checkbox_icon/icon_check.svg);
-  background-color: var(--accent-color);
-  border-radius: 2px;
-}
+    .checkbox:checked + & {
+      background-image: url(../images/checkbox_icon/icon_check.svg);
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
 
-.checkbox:focus + .checkbox-label::before {
-  outline: 1px solid var(--accent-color);
+    .checkbox:focus + & {
+      outline: 1px solid var(--accent-color);
+    }
+  }
 }
 
 .checkbox-link {
@@ -120,6 +120,7 @@
   border: transparent;
   border-radius: 4px;
   background-color: var(--accent-color);
+  cursor: pointer;
 
   color: var(--primary-white-color);
   font-size: 16px;
@@ -128,9 +129,9 @@
 
   transition: background-color var(--transition-duration)
     var(--transition-timing-function);
-}
 
-.user-form-btn:hover,
-.user-form-btn:focus {
-  background-color: var(--btn-hover-bg-color);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-bg-color);
+  }
 }

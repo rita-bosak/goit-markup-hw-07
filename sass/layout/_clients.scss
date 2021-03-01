@@ -28,20 +28,20 @@
 
   transition: border var(--transition-duration)
     var(--transition-timing-function);
-}
 
-.clients-list-link:hover,
-.clients-list-link:focus {
-  border: 1px solid var(--accent-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .clients-logo {
   fill: var(--icon-color);
 
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.clients-list-link:hover .clients-logo,
-.clients-list-link:focus .clients-logo {
-  fill: var(--accent-color);
+  .clients-list-link:hover &,
+  .clients-list-link:focus & {
+    fill: var(--accent-color);
+  }
 }

@@ -8,19 +8,13 @@
 
 // COMPONENTS
 @import "./components/logo";
-@import "./components/modal-btn";
 @import "./components/subtitle";
+@import "./components/filter-btn";
 @import "./components/social-list";
 @import "./components/social-links";
 
 // LAYOUT
 @import "./layout/header";
-@import "./layout/hero";
-@import "./layout/features";
-@import "./layout/about";
-@import "./layout/team";
-@import "./layout/clients";
+@import "./layout/portfolio";
+@import "./layout/card-set";
 @import "./layout/footer";
-@import "./layout/backdrop";
-@import "./layout/modal-window";
-@import "./layout/modal-form";

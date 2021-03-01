@@ -16,10 +16,10 @@
 
   transition: background-color var(--transition-duration)
     var(--transition-timing-function);
-}
 
-.hero-modal-btn:hover,
-.hero-modal-btn:focus {
-  background-color: var(--btn-hover-bg-color);
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-bg-color);
+    cursor: pointer;
+  }
 }

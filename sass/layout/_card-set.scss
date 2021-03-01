@@ -18,12 +18,12 @@
 .examples-list-link {
   transition: box-shadow var(--transition-duration)
     var(--transition-timing-function);
-}
 
-.examples-list-link:hover,
-.examples-list-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .thumb {
@@ -51,11 +51,11 @@
 
   transition: transform var(--transition-duration)
     var(--transition-timing-function);
-}
 
-.examples-list-link:hover .overlay,
-.examples-list-link:focus .overlay {
-  transform: translateY(0);
+  .examples-list-link:hover &,
+  .examples-list-link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .examples-list-title {
