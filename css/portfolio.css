@@ -191,6 +191,34 @@ a {
   fill: var(--primary-white-color);
 }
 
+.modal-btn {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  border: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 29px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-btn:hover, .modal-btn:focus {
+  background-color: var(--btn-hover-bg-color);
+  cursor: pointer;
+}
+
+.modal-btn.user-form-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -445,22 +473,6 @@ a {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--primary-white-color);
-}
-
-.footer-form-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 200px;
-  padding: 10px;
-  border: transparent;
-  border-radius: 4px;
-  background-color: var(--accent-color);
-  cursor: pointer;
-  color: var(--primary-white-color);
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
 }
 
 .footer-form-btn-icon {

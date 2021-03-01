@@ -110,28 +110,3 @@
   margin-left: 3px;
   color: var(--accent-color);
 }
-
-.user-form-btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 200px;
-  padding: 10px;
-  border: transparent;
-  border-radius: 4px;
-  background-color: var(--accent-color);
-  cursor: pointer;
-
-  color: var(--primary-white-color);
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-
-  transition: background-color var(--transition-duration)
-    var(--transition-timing-function);
-
-  &:hover,
-  &:focus {
-    background-color: var(--btn-hover-bg-color);
-  }
-}
