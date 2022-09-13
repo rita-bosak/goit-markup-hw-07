@@ -1,1 +1,1 @@
-# goit-markup-hw-07
+Refactoring CSS-code using SASS
